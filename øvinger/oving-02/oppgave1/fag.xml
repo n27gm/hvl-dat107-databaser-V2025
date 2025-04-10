@@ -1,12 +1,10 @@
 <?xml version = "1.0" encoding="utf-8"?>
-<?xml-stylesheet type = "text/xsl" href = "fag2.xsl"?>
+<?xml-stylesheet type = "text/xsl" href = "fag-løsning.xsl"?>
 <!-- <hvl> -->
 <!-- <hvl xmlns="http://oving.hvl.no/fag"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://oving.hvl.no/fag fag.xsd"> -->
-<hvl xmlns="http://oving.hvl.no/fag"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://oving.hvl.no/fag fag.xsd">
+<hvl>
    <emner>
       <emne><kode>DAT100</kode><navn>Grunnleggende Programmering</navn><poeng>10</poeng><semester>1</semester></emne>
       <emne><kode>MAT101</kode><navn>Diskret Matematikk 1</navn><poeng>10</poeng><semester>1</semester></emne>
