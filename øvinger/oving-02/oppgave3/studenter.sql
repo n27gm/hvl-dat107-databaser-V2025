@@ -1,7 +1,10 @@
+CREATE SCHEMA if not exists forelesning2;
+SET search_path = forelesning2;
+
 CREATE TABLE studenter (
-                          student_no INTEGER,
-                          xml_info   XML,
-                          CONSTRAINT studenter_pk PRIMARY KEY (student_no)
+  student_no INTEGER,
+  xml_info   XML,
+  CONSTRAINT studenter_pk PRIMARY KEY (student_no)
 );
 
 INSERT INTO studenter (student_no, xml_info)
