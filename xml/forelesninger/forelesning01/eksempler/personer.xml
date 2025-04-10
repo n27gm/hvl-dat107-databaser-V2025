@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<personer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="personer1.xsd">
+   <person>
+      <pnr>1</pnr>
+      <fornavn>Ola</fornavn>
+      <etternavn>Norman</etternavn>
+      <fodselsdato>1980-01-01</fodselsdato>
+   </person>
+   <person>
+      <pnr>2</pnr>
+      <fornavn>Kari</fornavn>
+      <etternavn>Petersen</etternavn>
+      <fodselsdato>1993-08-23</fodselsdato>
+      <erStudent>true</erStudent>
+   </person>
+   <!--
+   <person>
+      <pnr>3</pnr>
+      <fornavn>Per</fornavn>
+      <etternavn>Hansen</etternavn>
+      <fodselsdato>1975-12-31</fodselsdato>
+   </person>
+   -->
+</personer>

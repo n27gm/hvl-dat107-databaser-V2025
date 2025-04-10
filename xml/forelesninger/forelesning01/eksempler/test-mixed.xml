@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mainContent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="test-mixed.xsd">
+   <noMix>
+      Dette ligner litt på HTML språket. Der <bold>noe tekst</bold> kan være <bold>fet</bold>,
+      og <italic>noe annet</italic> kan være <italic>kursiv</italic>.
+   </noMix>
+   <mixed>
+      Dette ligner litt på HTML språket. Der <bold>noe tekst</bold> kan være <bold>fet</bold>,
+      og <italic>noe annet</italic> kan være <italic>kursiv</italic>.
+   </mixed>
+   <registered>2020-10-01T01:13:00</registered>
+</mainContent>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<personer xmlns="http://www.hvl.no"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.hvl.no personer2.xsd">
+  <person>
+    <pnr>1</pnr>
+    <fornavn>Ola</fornavn>
+    <etternavn>Nordmann</etternavn>
+    <barn>1</barn>
+    <fodselsdato>1980-01-01</fodselsdato>
+  </person>
+  <person>
+    <pnr>2</pnr>
+    <fornavn>Kari</fornavn>
+    <etternavn>Svenske</etternavn>
+    <fodselsdato>1993-08-23</fodselsdato>
+  </person>
+  <person>
+    <pnr>3</pnr>
+    <fornavn>Lasse</fornavn>
+    <etternavn>Jenssen</etternavn>
+    <fodselsdato>1971-10-04</fodselsdato>
+  </person>
+</personer>

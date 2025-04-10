@@ -1,0 +1,6 @@
+<!ELEMENT personer (person*)>
+<!ELEMENT person (pnr, fornavn, etternavn, fodselsdato)>
+<!ELEMENT pnr (#PCDATA)>
+<!ELEMENT fornavn (#PCDATA)>
+<!ELEMENT etternavn (#PCDATA)>
+<!ELEMENT fodselsdato (#PCDATA)>

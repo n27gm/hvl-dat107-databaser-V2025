@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE personer SYSTEM "personer.dtd"> -->
+
+<personer>
+   <person>
+      <pnr>1</pnr>
+      <fornavn>Ola</fornavn>
+      <etternavn>Nordmann</etternavn>
+      <fodselsdato>1980-01-01</fodselsdato>
+      <demo>Denne blir ulovlig når DTD aktiveres</demo>
+   </person>
+   <person>
+      <pnr>2</pnr>
+      <fornavn>Kari</fornavn>
+      <etternavn>Pettersen</etternavn>
+      <fodselsdato>1993-08-23</fodselsdato>
+   </person>
+</personer>

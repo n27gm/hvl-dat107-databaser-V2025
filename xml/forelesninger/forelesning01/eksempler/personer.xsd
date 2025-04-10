@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="personer">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="person" minOccurs="0" maxOccurs="unbounded">
+               <xs:complexType>
+                  <xs:sequence>
+                     <xs:element name="pnr">
+                        <xs:simpleType>
+                           <xs:restriction base="xs:integer">
+                              <xs:enumeration value="1"/>
+                              <xs:enumeration value="2"/>
+                           </xs:restriction>
+                        </xs:simpleType>
+                     </xs:element>
+                     <xs:element name="fornavn">
+                        <xs:simpleType>
+                           <xs:restriction base="xs:string">
+                              <xs:enumeration value="Ola"/>
+                              <xs:enumeration value="Kari"/>
+                           </xs:restriction>
+                        </xs:simpleType>
+                     </xs:element>
+                     <xs:element name="etternavn" type="xs:string" />
+                     <xs:element name="barn" type="xs:integer" minOccurs="0"/>
+                     <xs:element name="fodselsdato" type="xs:date" />
+                     <xs:element name="erStudent" type="xs:boolean" minOccurs="0"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+</xs:schema>

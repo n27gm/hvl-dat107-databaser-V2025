@@ -1,0 +1,11 @@
+services:
+  mongodb:
+    image: hvl/mongodb
+    container_name: mongodb-dat107
+    ports:
+      - "27018:27017"
+#    volumes:
+#      - ./data/mongodb-dat107:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: secure

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified"
+           elementFormDefault="qualified"
+           targetNamespace="http://www.hvl.no"
+           xmlns="http://www.hvl.no"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:dat="http://www.hvl.no">
+
+    <!-- Elementdefinisjoner -->
+    <xs:element name="personer" type="personerType">
+        <xs:unique name="pnrUnique" >
+            <xs:selector xpath="dat:person"/>
+            <xs:field xpath="@pnr"/>
+        </xs:unique>
+    </xs:element>
+
+    <!-- Typedefinisjoner: COMPLEX -->
+    <xs:complexType name="personerType">
+        <xs:sequence>
+            <xs:element name="person" type="personType" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="personType">
+        <xs:sequence>
+            <xs:element name="fornavn" type="fornavnType" />
+            <xs:element name="etternavn" type="xs:string" />
+            <xs:element name="barn" type="xs:integer" minOccurs="0"/>
+            <xs:element name="fodselsdato" type="xs:date" />
+            <!-- <xs:choice>
+                <xs:element name="male" type="xs:anyType"/>
+                <xs:element name="female" type="xs:anyType"/>
+            </xs:choice> -->
+        </xs:sequence>
+        <xs:attribute name="pnr" type="pnrType" use="required" />
+    </xs:complexType>
+
+    <!-- Typedefinisjoner: SIMPLE -->
+    <xs:simpleType name="pnrType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="500"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="fornavnType">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
